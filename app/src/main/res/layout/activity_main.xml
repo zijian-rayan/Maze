@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="欢迎来到迷宫游戏！" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_weight="0.32"
+        android:background="#68DEE974"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="您的名字"
+            android:textColor="#127A17" />
+
+        <Button
+            android:id="@+id/Play"
+            android:layout_width="197dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:background="#638BC34A"
+            android:text="开始"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/Score"
+            android:layout_width="195dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:background="#638BC34A"
+            android:text="得分"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:id="@+id/rbtgroup_maze"
+            android:layout_width="wrap_content"
+            android:layout_height="269dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:baselineAligned="false">
+
+
+            <RadioButton
+                android:id="@+id/round1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="迷宫1"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/round2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="迷宫2"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/round3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="迷宫3"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/round4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="迷宫4"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/round5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="迷宫5"
+                android:textSize="24sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
